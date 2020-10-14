@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+<img src="woman.jpg" width="700px">
+
+</div>
+<div class="c">
+<img class="im" src="logo.jpg" width="140px" >
+|<div class="m" >
+<img   src="eonlogo.jpg" width="140px">
+<p>التقـــــــويـــــــم</p><br><br>
+<p>الشــفــــــــــــاف</p><br>
+</div>
+
+<P class="n">                      الأن بسعر التقويم المعدني</P><br>
+
+<button type="button" id="myBtn2"> احجز موعد استشارة</button>
+<button type="button" style="background-color: #406E92;"  id="myBtn">  اعرف المزيد</button><br><br>
+
+<p class="b">ينطبق فقط لمواعيد الاستشارة المحجوزة<br>
+                         ليومي السبت٢٦/٩ و٣/١٠</p><br> <br>
+
+               <span class="seperated-link-ar pointer-on-hover" id="myBtn3">احجز موعدك
+                الان!</span>
+
+
+</div>
+
+
+<div id="myModal" class="modal">
+   
+    <div class="modal-content">
+        <span class="close pointer-on-hover">&times;</span>
+        <div id="formFeilds">
+            <form id="form">
+                <div class="form-grid">
+                    <div id="error" class="error">حدث خطأ</div>
+                    <div>
+                        <label for="name">الإسم</label>
+                        <input type="text" class="w-full" id="name" name="name" placeholder="الإسم.."
+                            required />
+                    </div>
+                    <div>
+                        طريقة الاتصال
+                        <div style="display: flex; gap: 1em; margin-top: 10px">
+                            <br />
+                            <label class="container">بريد الكتروني
+                                <input value="email" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('email')" required />
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">واتس اب
+                                <input value="whatsApp" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('whatsApp')" />
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">رقم الهاتف
+                                <input value="phone" type="radio" name="radio" id="contactMethod"
+                                    onclick="showField('phone')" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="whatsAppContainer" id="whatsAppContainer">
+                            <label for="WhatsApp">واتس اب</label>
+                            <input type="text" class="w-full arabicNumberField" id="whatsApp" name="whatsApp"
+                                placeholder="+962 xx xxxxxxx" />
+                        </div>
+
+                        <div class="emailContainer" id="emailContainer">
+                            <label for="email">البريد الالكتروني</label>
+                            <input type="text" class="w-full" id="email" name="email"
+                                placeholder="البريد الالكتروني.." />
+                        </div>
+
+                        <div class="phoneContainer" id="phoneContainer">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="text" class="w-full arabicNumberField" id="phone" name="phone"
+                                placeholder="+962 xx xxxxxxx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="grid justify-center">
+                    <button id="submitButton" type="submit" class="submit-blue pointer-on-hover">
+                        ارسال
+                        <div id="spinner" class="nb-spinner"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="thankyouSection" class="thankyouPage">
+            <div class="thankyouText-ar openSans">
+                شكراً للتواصل معنا،<br /> لقد اتخذت الخطوة الأولى باتجاه ابتسامتك الجديدة!
+                <br /> سيقوم طاقم العيادة بالاتصال بك خلال ال٢٤ ساعة القادمة.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="mais.js"></script>
+
+    </body>
+</html>
