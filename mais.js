@@ -47,6 +47,7 @@ window.onclick = function (event) {
     thankyouSection.style.display = "none";
   }
 };
+//showField
 const showField = (data) => {
   switch (data) {
     case "email": {
